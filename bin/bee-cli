@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+const pk = require("../package.json");
+const { Command } = require("commander");
+
+const program = new Command(pk.name);
+program.version(pk.version);
+program.usage("<command> [options]");
+program.command("add", "add a new template");
+program.command("delete", "delete a template");
+program.command("list", "list all the templates");
+program.command("init", "generate a new project from a template");
+
+let params = program.parse(process.argv);
+console.log(JSON.stringify(params));

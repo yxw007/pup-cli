@@ -1,9 +1,10 @@
 {
-  "name": "bee-cli",
-  "version": "1.0.0",
+  "name": "pup-cli",
+  "version": "0.0.1",
   "main": "index.js",
   "author": "Potter<aa4790139@gmail.com>",
   "license": "MIT",
+  "repository": "git@github.com:yxw007/pup-cli.git",
   "bin": {
     "bee-cli": "bin/bee-cli",
     "bee-cli-add": "bin/bee-cli-add",

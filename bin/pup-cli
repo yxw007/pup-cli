@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+const pk = require("../package.json");
+const { Command } = require("commander");
+
+const program = new Command(pk.name);
+program.version(pk.version);
+program.usage("<command> [options]");
+program.command("add", "add a new template");
+program.command("delete", "delete a template");
+program.command("list", "list all the templates");
+program.command("init", "generate a new project from a template");
+
+let params = program.parse(process.argv);
+console.log(params);
+
+program.parse(process.argv);
+if (program.args.length < 1) return program.help();
+
+// 好比 vue init webpack project-name 的命令一样，第一个参数是 webpack，第二个参数是 project-name
+let templateName = program.args[0];
+let projectName = program.args[1];
+if (!tplObj[templateName]) {
+  console.log(chalk.red("\n Template does not exit! \n "));
+  return;
+}
+if (!projectName) {
+  console.log(chalk.red("\n Project should not be empty! \n "));
+  return;
+}
+
+// switch(){
+
+// }

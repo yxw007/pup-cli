@@ -6,11 +6,11 @@
   "license": "MIT",
   "repository": "git@github.com:yxw007/pup-cli.git",
   "bin": {
-    "bee-cli": "bin/bee-cli",
-    "bee-cli-add": "bin/bee-cli-add",
-    "bee-cli-delete": "bin/bee-cli-delete",
-    "bee-cli-list": "bin/bee-cli-list",
-    "bee-cli-init": "bin/bee-cli-init"
+    "pup-cli": "bin/pup-cli",
+    "pup-cli-add": "bin/pup-cli-add",
+    "pup-cli-delete": "bin/pup-cli-delete",
+    "pup-cli-list": "bin/pup-cli-list",
+    "pup-cli-init": "bin/pup-cli-init"
   },
   "dependencies": {
     "chalk": "^4.1.2",

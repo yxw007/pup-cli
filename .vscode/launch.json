@@ -15,7 +15,7 @@
                 "vue2.x-webpack4.x",
                 "./test"
             ],
-            "program": "${workspaceFolder}\\bin\\bee-cli-init"
+            "program": "${workspaceFolder}\\bin\\pup-cli-init"
         }
     ]
 }

@@ -1,0 +1,53 @@
+#!/usr/bin/env node
+
+const chalk = require("chalk");
+const ora = require("ora");
+const download = require("download-git-repo");
+const tplObj = require(`${__dirname}/../template`);
+const inquirer = require("inquirer");
+
+const questions = [
+  {
+    name: "projectName",
+    type: "input",
+    message: "Enter your project name ",
+    validate: (value = "") => {
+      if (value === "") {
+        return false;
+      } else {
+        return true;
+      }
+    },
+  },
+  {
+    type: "list",
+    name: "choice",
+    message: "please choice use template project",
+    choices: Object.keys(tplObj),
+  },
+];
+
+(async () => {
+  let answers = await inquirer.prompt(questions);
+  console.log("params:", answers);
+
+  let projectName = answers.projectName;
+  let url = tplObj[answers.choice];
+
+  console.log(chalk.white("\n Start generating... \n"));
+  const spinner = ora("Downloading...");
+  spinner.start();
+
+  download(url, projectName, (err) => {
+    if (err) {
+      spinner.fail();
+      console.log(chalk.red(`Generation failed. ${err}`));
+      return;
+    }
+
+    spinner.succeed();
+    console.log(chalk.green("\n Generation completed !"));
+    console.log("\n Now go open the project");
+    console.log(chalk.blue(`\n    cd ${projectName} \n`));
+  });
+})();

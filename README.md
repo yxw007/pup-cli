@@ -1,2 +1,2 @@
-# Bee-cli
+# pup-cli
 脚手架

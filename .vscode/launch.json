@@ -9,13 +9,13 @@
             "request": "launch",
             "name": "Launch Program",
             "skipFiles": [
-                "<node_internals>/**"
+                // "<node_internals>/**"
             ],
             "args": [
-                "vue2.x-webpack4.x",
-                "./test"
+                "init",
+                "test"
             ],
-            "program": "${workspaceFolder}\\bin\\pup-cli-init"
+            "program": "${workspaceFolder}\\bin\\pup-cli"
         }
     ]
 }

@@ -2,8 +2,8 @@
 pup-cli 是一个非常简单的脚手架工具，你可能会为有vue-cli 为啥要用你这pup-cli? 如果你以前是webpack的使用者，利用vue-cli生成的项目，你会看不到webpack的配置文件，因为vue-cli把webpack封装了一层，导致你摸不着头脑要怎么要配置，当然按照官网的文档你可以慢慢配好，但是这样会让人花费不少时间，所以我就想着用一个模板工程把一个相对完善的开发环境配好，然后利用pup-cli 直接选择模板工程生成项目，然后就可以快速开发了。
 
 ## 内置模板工程
-- vue2.x-webpack4.x(已可用)
-- vue3.x-webpack5.x(暂不可用)
+- [vue2.x-webpack4.x](https://github.com/yxw007/vue2.x-webpack4.x)(已可用)
+- [vue3.x-webpack5.x](https://github.com/yxw007/vue3.x-webpack5.x)(暂不可用)
 
 ## 快速开始
 1. 全局安装：

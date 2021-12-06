@@ -1,10 +1,14 @@
 {
   "name": "pup-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "author": "Potter<aa4790139@gmail.com>",
   "license": "MIT",
   "repository": "git@github.com:yxw007/pup-cli.git",
+  "keywords": [
+    "vue",
+    "webpack"
+  ],
   "bin": {
     "pup-cli": "bin/pup-cli",
     "pup-cli-add": "bin/pup-cli-add",

@@ -8,7 +8,7 @@ const tplObj = require(`${__dirname}/../template`);
 let question = [
   {
     name: "name",
-    message: "请输入要删除的模板名称",
+    message: "please input need delete templete name:",
     validate(val) {
       if (val === "") {
         return "Name is required!";

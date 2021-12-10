@@ -1,6 +1,6 @@
 {
   "name": "pup-cli",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "main": "index.js",
   "author": "Potter<aa4790139@gmail.com>",
   "license": "MIT",
